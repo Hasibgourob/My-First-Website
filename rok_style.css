@@ -1,0 +1,204 @@
+    <style>
+        .shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 30px;
+        }
+        .check_rok {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        
+        .brdr{
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+            
+        }
+        .items {
+            color: rgb(79, 101, 247);
+        }
+        .order_sum {
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 0px ;
+            padding: 10px 20px;
+            border-radius: 10px;
+            
+        }
+        .brdr1{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+            margin: 0px 20px; 
+        }
+        .sumOrder {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .line {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 30px;
+        }
+        
+        .money1 {
+            color: rgb(1, 5, 1);
+            font-size: 15px;
+        }
+        
+        .sum {
+            font-size: 15px;
+            font-weight: bold;
+            
+        }
+
+        .promocode{
+            font-family: 'Roboto', sans-serif;
+            font-weight:bold;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 0px ;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .section{
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 0px ;
+            border-radius: 10px;
+        }
+
+        .pay,.cashon,.mblwallet{
+            font-family: 'Roboto', sans-serif;
+            ;
+        }
+        .pay{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            padding:5px 20px;
+             
+        }
+        .note{
+            color:rgb(133, 133, 133);
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        .brdr2{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+        }
+        .cashon{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            padding:5px 20px;
+        }
+        .note2{
+            color:rgb(28, 26, 26);
+            margin-top: 0px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .logo{
+           background-color: whitesmoke;
+           border: 2px solid rgba(0, 0, 0, 0.1);
+           border-radius: 10px;
+           display: flex;
+           align-items: center;
+           font-size: large;
+           padding: 15px 20px;
+           margin-left:20px ;
+           margin-right: 80px;
+           gap: 5px;
+
+        }
+        .logo-image{
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+             
+        }
+
+        .logo1{
+            font-size: 20px;
+            color: #010501;      
+        }
+        .brdr3{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+            margin-top: 20px;
+        }
+        .mblwallet{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            padding:5px 20px;
+        }
+        .note3{
+            color:rgba(32, 30, 30, 0.936);
+            margin-top: 0px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .logo-nagad{
+            background-color: whitesmoke;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 80px;
+            margin-bottom: 20px;
+        }
+        .logo-image1{
+            width: 150px;
+            height: 100px;
+            margin-left:30px;        
+        }
+        .logo-bkash{
+            background-color: whitesmoke;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 80px;
+            margin-bottom: 20px;
+        }
+        .logo-image2{
+            width: 100px;
+            height: 60px;
+            margin-left:30px;
+            padding: 22px;        
+        }
+        .logo-rocket{
+            background-color: whitesmoke;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 80px;
+            margin-bottom: 20px;
+        }
+        .logo-image3{
+            width: 100px;
+            height: 80px;
+            margin-left:30px;
+            padding: 10px;        
+        }
+    </style>
