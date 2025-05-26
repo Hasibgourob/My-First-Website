@@ -6,6 +6,7 @@
     <title>RokDiv</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="rok_style.css">
+
 </head>
 <body>
     <div class="shadow">
@@ -31,6 +32,7 @@
             <p class="cashon">ক্যাশ অন ডেলিভারি</p>
             <p class="note2">পণ্য হাতে পেয়ে পরিশোধ করুন </p>
             <div class="logo">
+                <input type="radio" name="payment" class="radio-btn" id="cashon">
                 <img src="cashon.png" class="logo-image" alt="cash on delivery"> 
                 <p class="logo1">Cash on delivery </p>
             </div>
@@ -38,12 +40,15 @@
             <p class="mblwallet">মোবাইল ওয়ালেট </p>
             <p class="note3"> মোবাইল ওয়ালেট এর মাধ্যমে টাকা পরিশোধ করুন</p>
             <div class="logo-nagad">
-                    <img src="Nagad-Logo.wine.png" class = "logo-image1">
+                <input type="radio" name="payment" class="radio-btn1" id="nagad">
+                <img src="Nagad-Logo.wine.png" class = "logo-image1">
                 </div>
             <div class="logo-bkash">
-                    <img src="bkash-logo-png.png" class = "logo-image2">
+                <input type="radio" name="payment" class="radio-btn2" id="bkash">
+                <img src="bkash-logo-png.png" class = "logo-image2">
                 </div>
             <div class="logo-rocket">
+                    <input type="radio" name="payment" class="radio-btn3" id="rocket">
                     <img src="dutch-bangla-rocket-logo-png_seeklogo-317692.png" class = "logo-image3">
                 </div>
                     
@@ -54,5 +59,57 @@
     
  
 </div>
+<div id="popup" class="popup">
+  <span id="closePopup" class="close-btn">&times;</span>
+  🎉 You have selected Cash on Delivery
+</div>
+
+<div id="popup1" class="popup">
+  <span id="closePopup1" class="close-btn">&times;</span>
+  🎉 You have selected Nogod
+</div>
+
+<div id="popup2" class="popup">
+  <span id="closePopup2" class="close-btn">&times;</span>
+  🎉 You have selected Bkash
+</div>
+
+<div id="popup3" class="popup">
+  <span id="closePopup3" class="close-btn">&times;</span>
+  🎉 You have selected Rocket
+</div>
+
+<script>
+    const popups = {
+    cashon: document.getElementById('popup'),
+    nagad: document.getElementById('popup1'),
+    bkash: document.getElementById('popup2'),
+    rocket: document.getElementById('popup3'),
+};
+
+const radios = ['cashon', 'nagad', 'bkash', 'rocket'];
+
+function hideAllPopups() {
+    Object.values(popups).forEach(p => p.style.display = 'none');
+}
+
+radios.forEach(id => {
+    const radio = document.getElementById(id);
+    const popup = popups[id];
+    const closeBtn = popup.querySelector('.close-btn');
+
+    radio.addEventListener('change', () => {
+        if (radio.checked) {
+            hideAllPopups();
+            popup.style.display = 'block';
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+});
+</script>
+
 </body>
 </html> 
